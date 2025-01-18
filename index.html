@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MyNews Store</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="bg-dark text-white py-3">
+    <div class="container">
+      <nav class="d-flex justify-content-between align-items-center">
+        <h1 class="h4">MyNews Store</h1>
+        <ul class="nav">
+          <li class="nav-item"><a href="#features" class="nav-link text-white">Features</a></li>
+          <li class="nav-item"><a href="#testimonials" class="nav-link text-white">Testimonials</a></li>
+          <li class="nav-item"><a href="#subscribe" class="nav-link text-white">Subscribe</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero bg-light text-center py-5">
+    <div class="container text-black">
+      <h2>Welcome to MyNews Store</h2>
+      <p class="lead">Enjoy our new shop opening's promotion.</p>
+      <section id="images" class="bg-light py-5">
+        <div class="container">
+          <div id="testimonialsCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="/images/vision-mission.jpg" width="750px" height="300px">
+              </div>
+              <div class="carousel-item">
+                <img src="images/home-promo-10.jpg" width="750px" height="300px">
+              </div>
+              <div class="carousel-item">
+                <img src="images/home-promo-03.jpg" width="750px" height="300px">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#testimonialsCarousel" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon bg-primary" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#testimonialsCarousel" data-bs-slide="next">
+              <span class="carousel-control-next-icon bg-primary" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+      </section>
+      <button class="btn btn-primary btn-lg" data-bs-toggle="modal" data-bs-target="#ctaModal">Sign In For More</button>
+    </div>
+  </section>
+
+  <!-- Modal -->
+  <div class="modal fade" id="ctaModal" tabindex="-1" aria-labelledby="ctaModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="ctaModalLabel">Welcome Onboard!</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          Thank you for showing interest in our services. Sign up now to explore more!
+          <form class="row g-3 justify-content-center mt-4" id="signUpForm">
+            <div>
+              <input type="text" class="form-control" id="name" placeholder="Your Name" required>
+            </div>
+            <div>
+              <input type="email" class="form-control" id="email" placeholder="Your Email" required>
+            </div>
+            <div>
+              <button type="submit" class="btn btn-primary w-100">Sign up</button>
+            </div>
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Services Section -->
+  <section id="services" class="py-5">
+    <div class="container">
+      <h3 class="text-center mb-4">Our Services</h3>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card feature-card shadow hover-effect">
+            <div class="card-body">
+              <i class="bi bi-speedometer2 fs-1 text-primary"></i>
+              <h5 class="card-title mt-3">Bill Payments</h5>
+              <p class="card-text">Details about it...</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card feature-card shadow hover-effect">
+            <div class="card-body">
+              <i class="bi bi-shield-check fs-1 text-success"></i>
+              <h5 class="card-title mt-3">Touch n Go Reloads</h5>
+              <p class="card-text">Details about it...</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card feature-card shadow hover-effect">
+            <div class="card-body">
+              <i class="bi bi-people fs-1 text-warning"></i>
+              <h5 class="card-title mt-3">Mobile Reloads</h5>
+              <p class="card-text">Details about it...</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section id="testimonials" class="bg-light py-5">
+    <div class="container">
+      <h3 class="text-center mb-4">Testimonials of Our Partnerships</h3>
+      <div id="testimonialsCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <blockquote class="blockquote text-center">
+              <p>"This is the best retailer store ever!"</p>
+              <footer class="blockquote-footer">John Doe</footer>
+            </blockquote>
+          </div>
+          <div class="carousel-item">
+            <blockquote class="blockquote text-center">
+              <p>"Convenience and reliable!"</p>
+              <footer class="blockquote-footer">Jane Smith</footer>
+            </blockquote>
+          </div>
+          <div class="carousel-item">
+            <blockquote class="blockquote text-center">
+              <p>"Affordable and accessible!"</p>
+              <footer class="blockquote-footer">Alex Brown</footer>
+            </blockquote>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#testimonialsCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#testimonialsCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Subscribe Section -->
+  <section id="subscribe" class="py-5 bg-primary text-white">
+    <div class="container text-center">
+      <h3>Stay Connected</h3>
+      <p class="mb-4">Subscribe to our newsletter and never miss an update.</p>
+      <form class="row g-3 justify-content-center" id="subscriptionForm">
+        <div class="col-md-3">
+          <input type="text" class="form-control" id="subscribeName" placeholder="Your Name" required>
+        </div>
+        <div class="col-md-3">
+          <input type="email" class="form-control" id="subscribeEmail" placeholder="Your Email" required>
+        </div>
+        <div class="col-md-2">
+          <button type="submit" class="btn btn-light w-100">Subscribe</button>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer id="contact" class="bg-dark text-white py-3">
+    <div class="container text-center">
+      <p>Contact us at <a href="mailto:support@mynews.com" class="text-primary">support@mynews.com</a></p>
+      <ul class="list-inline">
+        <li class="list-inline-item"><a href="#" class="text-white">Facebook</a></li>
+        <li class="list-inline-item"><a href="#" class="text-white">Twitter</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
